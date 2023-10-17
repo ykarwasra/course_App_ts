@@ -1,0 +1,12 @@
+@media(max-width: 850px)
+{ 
+    .course-tile {
+        width: 600px; 
+        }
+
+        .admin{ 
+            font-size: larger;
+            font-style: italic;
+            color: whitesmoke;
+        }
+}

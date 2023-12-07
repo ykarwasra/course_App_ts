@@ -143,7 +143,7 @@ function UpdateCard(){
                   setCourse({course: updatedCourse, isLoading: false});
               }}
           > Update course</Button>
-          <Button variant="conatined" onClick={()=>{
+          <Button variant={"contained"} onClick={()=>{
             navigate("/courses");
           }}>Done</Button>
       </div>

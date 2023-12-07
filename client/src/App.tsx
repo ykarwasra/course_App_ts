@@ -57,14 +57,14 @@ function InitUser() {
           } else {
               setUser({
                   isLoading: false,
-                  userEmail: null
+                  userEmail: ""
               })
           }
       } catch (e) {
 
           setUser({
               isLoading: false,
-              userEmail: null
+              userEmail: ""
           })
       }
   };

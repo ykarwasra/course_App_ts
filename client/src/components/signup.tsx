@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 import {userState}  from "../store/atom/user.js";
 import { Base_Url } from "../config.js";
+import React from "react";
 
 export default function Signup(){
     const [username, setUsername] = useState("");

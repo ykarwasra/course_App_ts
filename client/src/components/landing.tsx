@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 import {useRecoilValue} from "recoil";
 import { isUserLoading } from "../store/selector/isUserLoading";
 import { userEmailState } from "../store/selector/userEmail";
-import LandingStyle from '../css/Landing.css'
+import React from "react";
 
 
 export const Landing = () => {

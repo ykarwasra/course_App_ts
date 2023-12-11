@@ -18,4 +18,4 @@ job:
             run: |
                 echo "$SSH_PRIVATE_KEY">keyfile
                 chmod 600 keyfile
-                ssh -t -i keyfile ubuntu@ec2-51-20-190-222.eu-north-1.compute.amazonaws.com  "sudo bash ~/deploy.sh"
+                ssh -t -i keyfile ubuntu@<EC2 instance> "sudo bash ~/deploy.sh"

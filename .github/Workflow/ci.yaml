@@ -1,0 +1,21 @@
+name: deploy
+
+on:
+    push:
+        branch:
+            -master
+
+job:
+    deploy:
+        runs-on:ubuntu-latest
+        steps:
+            -name:checkout Code
+            uses:actions/checkout@v2
+
+            -name: SSH and deply
+             env:
+                SSH_PRIVATE_KEY:${{secrets.SSH_PRIVATE_KEY}}
+            run: |
+                echo "$SSH_PRIVATE_KEY">keyfile
+                chmod 600 keyfile
+                ssh -t -i keyfile ubuntu@ec2-51-20-190-222.eu-north-1.compute.amazonaws.com  "sudo bash ~/deploy.sh"
